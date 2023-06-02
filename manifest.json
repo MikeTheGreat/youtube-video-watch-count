@@ -1,16 +1,29 @@
 {
     "name": "Youtube video watch count",
     "description": "Count the number of times you watch a video",
-    "version": "1.0",
-    "manifest_version": 2,
-    "permissions": ["storage"],
+    "version": "1.0.1",
+    "manifest_version": 3,
+    "permissions": [
+        "storage"
+    ],
     "content_scripts": [
-      {
-        "matches": ["https://www.youtube.com/*"],
-        "js": ["src/main.js"]
-      }
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "src/main.js"
+            ]
+        }
     ],
     "web_accessible_resources": [
-      "src/*"
+        {
+            "resources": [
+                "src/storage.js",
+                "src/youtube.js"
+            ],
+            "matches": [],
+            "extension_ids": []
+        }
     ]
-  }
+}

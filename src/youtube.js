@@ -38,7 +38,7 @@ const renderWatchCount = count => {
     watchCount.style.fontSize = '1.4rem';
     watchCount.style.color = 'var(--yt-spec-text-secondary)';
   
-    const title = document.querySelector('.title.style-scope.ytd-video-primary-info-renderer');
+    const title = document.querySelector('.style-scope.ytd-watch-metadata');
     
     if (title) {
       title.style.position = 'relative';
